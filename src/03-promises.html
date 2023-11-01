@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise generator</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
@@ -12,19 +19,18 @@
     <form class="form">
       <label>
         First delay (ms)
-        <input type="number" name="delay" required />
+        <input type="number" name="delay" value="1000" />
       </label>
       <label>
         Delay step (ms)
-        <input type="number" name="step" required />
+        <input type="number" name="step" value="2000" />
       </label>
       <label>
         Amount
-        <input type="number" name="amount" required />
+        <input type="number" name="amount" value="3" />
       </label>
       <button type="submit">Create promises</button>
     </form>
-
     <script src="js/03-promises.js" type="module"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@ const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 
 let intervalId = null;
+const INTERVAL_TIME = 1000;
 
 const getRandomHexColor = () => {
   return `#${Math.floor(Math.random() * 16777215)
@@ -18,7 +19,7 @@ const startBtnHandler = () => {
 
   intervalId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
-  }, 1000);
+  }, INTERVAL_TIME);
 };
 
 const stoptBtnHandler = () => {
